@@ -1,0 +1,148 @@
+@import url("https://fonts.google.com/specimen/Outfit:300, 400, 600");
+@import url("/Outfit-VariableFont_wght.ttf");
+
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+:root{
+    --clr: hsl(217, 54%, 11%);
+}
+
+body{
+    font-size: 18px;
+    background-color: var(--clr);
+    color:hsl(215, 51%, 70%);
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+
+.card{
+    background:hsl(216, 50%, 16%);
+	border-radius: 10px;
+	box-shadow: 20px 10px 20px -10px rgba(0,0,0,0.75);
+	padding: 15px;
+	position: absolute;
+	width: 283px;
+    height: 500px;
+	max-width: 100%;
+	text-align: left;
+    background-size: contain;
+}
+
+.image{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+
+.imj{
+    display: block;
+    opacity: 1;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.svg-view{
+    justify-content: center;
+    align-content: center;
+    transform: translate(216%, 207%);
+}
+
+
+.dd{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+.spn1{
+    color: hsl(184, 78%, 57%);
+}
+
+.card .profile-image{
+	border: 1px solid white;
+	border-radius: 50%;
+    margin-right:20px;
+}
+
+.creation{
+    display: flex;
+    padding:0;
+    margin:0;
+}
+
+
+h3{
+    color:hsl(0, 0%, 100%);
+}
+
+hr{
+    border-color: #222;
+}
+
+.pro{
+    color:rgb(24, 158, 211);
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #90c8e0;
+    text-decoration: none;
+}
+
+.imj:hover{
+    opacity: 0.3;
+  }
+  
+  .middle:hover {
+    background-color: rgba(0, 255, 255, 0.534);
+    opacity: 1;
+  }
+
+h3:hover{
+    color: hsl(184, 78%, 57%);
+}
+
+span.pro:hover{
+    color: hsl(184, 78%, 57%);
+}
